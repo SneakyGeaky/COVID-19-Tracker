@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes fade1 {
+    0% {
+      opacity: 1; }
+    25% {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    75% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  
+  @keyframes fade2 {
+    0% {
+      opacity: 0; }
+    25% {
+      opacity: 1; }
+    50% {
+      opacity: 0; }
+    75% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  
+  @keyframes fade3 {
+    0% {
+      opacity: 0; }
+    25% {
+      opacity: 0; }
+    50% {
+      opacity: 1; }
+    75% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  
+  @keyframes fade4 {
+    0% {
+      opacity: 0; }
+    25% {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    75% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+
+.covid__home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),url(src/covid\ image\ 2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.covid__home__heading {
+    font-size: 5rem;
+    padding-top: 8rem;
+    text-align: center;
+    color: gold;
+}
+
+.covid__home > h3 {
+    text-align: center;
+    margin-top: 14rem;
+
+}
+
+.covid__home > h3 > a {
+    text-decoration: none;
+    background-color: goldenrod;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    border-bottom: 2px solid black;
+}
+
+.covid__home > h3 > a:hover {
+    color: gold;
+    background-color: #181D31;
+
+}
+
+.about__section {
+    height: 100vh;
+    position: relative; }
+    .about__covid__image--1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./src/about\ covid\ img\ 1.webp);
+        background-position: top;
+        background-repeat: no-repeat;
+        animation: fade1 10s infinite; }
+    .about__covid__image--2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./src/about\ covid\ img\ 2.webp);
+        background-position: top;
+        background-size: cover;
+        animation: fade2 10s infinite; }
+    .about__covid__image--3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./src/about\ covid\ img\ 3.jpg);
+        background-position: top;
+        background-size: cover;
+        animation: fade3 10s infinite; }
+    .about__covid__image--4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./src/about\ covid\ img\ 4.jpg);
+        background-position: top;
+        background-size: cover;
+        animation: fade4 10s infinite; }
+
+.stats__section__heading {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  background-image: linear-gradient(to right, #28b485, #ffb900);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stats__section__heading:hover {
+    transform: skewY(2deg) skewx(10deg) scale(1.06);
+    transition: all 1s;
+    text-shadow: 0.5rem 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+
+.span_1_of_3 > img{
+  margin-top: 10vh;
+  text-align: center;
+  width: 100%;
+}
+
+.span_1_of_2 > img {
+  margin-top: 3vh;
+  text-align: center;
+  display: inline-flex;
+  width: 100%;
+}
+
+.symptoms__heading {
+  margin-top: 2rem;
+  font-size: 3rem;
+  background-image: linear-gradient(to right, #28b485, #ffb900);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.amenity__box {
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 40rem;
+  color: white;
+  position: relative; }
+  .amenity__box--1 {
+    background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(./src/fever.png);
+    background-size: cover;
+    background-position: 68% 50%;
+  width: 100%; }
+  .amenity__box--2 {
+    background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(./src/cough.jpg);
+    background-size: cover;
+    background-position: 48% 50%;
+  width: 100%; }
+  .amenity__box--3 {
+    background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(./src/tiredness.jfif);
+    background-size: cover;
+    background-position: 48%;
+  width: 100% }
+  .amenity__box--4 {
+    background-image: linear-gradient(to right bottom, rgba(40, 180, 133, 0.5), rgba(79, 97, 42, 0.5)), url(./src/lack\ of\ smell.jfif);
+    background-size: cover;
+    background-position: 35% 0%;
+  width: 100%; }
+  .amenity__box__title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.7;
+    transition: opacity 0.2s; }
+  .amenity__box__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40rem;
+    background-image: linear-gradient(to right bottom, #28b485, #4f612a);
+    opacity: 0;
+    transition: opacity 0.2s; }
+  .amenity__box--1:hover .amenity__box__overlay {
+    opacity: 0.7; }
+  .amenity__box--1:hover .amenity__box__title {
+    opacity: 0; }
+  .amenity__box__content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 85%;
+    opacity: 0;
+    transition: all 0.2s; }
+    
+  .amenity__box--1:hover .amenity__box__content {
+    opacity: 1;
+    top: 50%; }
+  
+  .amenity__box--2:hover .amenity__box__overlay {
+    opacity: 0.7; }
+  .amenity__box--2:hover .amenity__box__title {
+      opacity: 0; }
+  .amenity__box--2:hover .amenity__box__content {
+      opacity: 1;
+      top: 50%; }
+
+  .amenity__box--3:hover .amenity__box__overlay {
+      opacity: 0.7; }
+  .amenity__box--3:hover .amenity__box__title {
+      opacity: 0; }
+  .amenity__box--3:hover .amenity__box__content {
+      opacity: 1;
+      top: 50%; }
+  
+  .amenity__box--4:hover .amenity__box__overlay {
+        opacity: 0.7; }
+  .amenity__box--4:hover .amenity__box__title {
+        opacity: 0; }
+  .amenity__box--4:hover .amenity__box__content {
+        opacity: 1;
+        top: 50%; }
+      
+
+  .amenity__box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right bottom, white, #ffb900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .amenity__box__text {
+    font-size: 1.5rem; }
+
+  .checkForCovid {
+    margin-top: 10rem;
+  }
+
+  .checkForCovid > a {
+    text-decoration: none;
+  }
+
+  .checkForCovid__text {
+    text-align: center;
+    font-size: 2.3rem;
+    color: gold;
+    margin: 2rem;
+  }
+
+  .checkForCovid__heading {
+      background-color: goldenrod;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      width: 25%;
+      border-radius: 4rem;
+      margin-left: 38.5%;
+  }
+
+.dropdown{
+  margin-top: 20rem;
+  margin-left: 44%;
+  padding: 4rem;
+  width: 100%;
+}
+
+.footer {
+  background-color: #333;
+  padding: 4rem 0;
+  font-size: 1.8rem; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__navigation {
+    margin-left: 25%;
+    text-decoration: none;
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__item {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    padding: 0 1rem;
+    font-size: 1.3rem;
+    color: white; }
+  .footer__link {
+    text-decoration: none;
+    color: white; }
+    .footer__link:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__copyright {
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 1.3rem;
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block;
+    width: 80%;
+    float: right;
+    margin-right: 8rem; }
+  .footer__author {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #c4ac6c; }
+    .footer__author:link, .footer__author:visited {
+      transition: all .4s; }
+    .footer__author:hover, .footer__author:active {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+      transform: rotate(5deg) scale(1.3); }
+
